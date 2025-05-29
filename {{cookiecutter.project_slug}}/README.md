@@ -1,15 +1,15 @@
-Your markdown has a couple of typos in the template variable names. The correct Jinja2 syntax for cookiecutter variables is `{{cookiecutter.variable_name}}`. In your markdown, you have:
+Your markdown has a couple of typos in the template variable names. The correct Jinja2 syntax for cookiecutter variables is `<Place Holder>`. In your markdown, you have:
 
 ```
 # 💳 Project: <Project Name>
-{{cookeiecutter.description}}
+<Place Holder>
 ```
 
 These should be:
 
 ```
 # 💳 Project: <Project Name>
-{{cookiecutter.description}}
+<Place Holder>
 ```
 
 Everywhere else, you use <Project Name> correctly.
