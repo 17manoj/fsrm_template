@@ -1,27 +1,27 @@
 Your markdown has a couple of typos in the template variable names. The correct Jinja2 syntax for cookiecutter variables is `{{cookiecutter.variable_name}}`. In your markdown, you have:
 
 ```
-# 💳 Project: {{cookeiecutter.project_slug}}
+# 💳 Project: <Project Name>
 {{cookeiecutter.description}}
 ```
 
 These should be:
 
 ```
-# 💳 Project: {{cookiecutter.project_slug}}
+# 💳 Project: <Project Name>
 {{cookiecutter.description}}
 ```
 
-Everywhere else, you use `{{cookiecutter.project_slug}}` correctly.
+Everywhere else, you use <Project Name> correctly.
 
 **Summary:**  
-- Use `{{cookiecutter.project_slug}}` and `{{cookiecutter.description}}` (not `{{cookeiecutter...}}`).
+- Use <Project Name> and <Project Name> 
 - The rest of your markdown is syntactically correct for cookiecutter template variables.
 
 **Corrected snippet:**
 ```markdown
-# 💳 Project: {{cookiecutter.project_slug}}
-{{cookiecutter.description}}
+# 💳 Project: <Project Name>
+<Project Name>
 ```
 
 ## 🗂️ Project Structure Explained
